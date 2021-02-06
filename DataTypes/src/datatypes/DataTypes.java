@@ -49,6 +49,23 @@ public class DataTypes {
         if(!condicion){
             System.out.println("condicion es: " + condicion);
         }
+        
+        //int primitivo = null; *Primitives types can store null
+        
+        // Integer is a no primitive data type
+        Integer numero = null; // Can store null because si not primitive
+        numero = 5;
+        // En los datos no primitivo puedes aplicar metodos
+        System.out.println(numero.byteValue());
+        
+        // String
+        
+        String palabra = "Hola que tal";
+        
+        
+        
+        
+        
     }
     
 }
