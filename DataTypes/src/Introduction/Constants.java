@@ -10,7 +10,7 @@ package Introduction;
  * @author development
  */
 public class Constants {
-    public static void constants(String[] args) {
+    public static void main(String[] args) {
     
     final int numero = 10; // con el prefijo final indicamos la constante
 

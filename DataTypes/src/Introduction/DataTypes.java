@@ -62,8 +62,7 @@ public class DataTypes {
         
         String palabra = "Hola que tal";
         
-        
-        
+       
         
         
     }
