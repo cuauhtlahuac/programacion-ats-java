@@ -40,7 +40,7 @@ public class InputAndOutput {
         System.out.println("El poema es: " + cadena);
         
         char caracter;        
-        System.out.println("Escribe un caracter, de todas formas solo guardaré la primer letra");
+        System.out.println("Escribe un caracter, de todas formas sólo guardaré la primer letra");
         caracter = entradaTexto.next().charAt(0);
         System.out.println("El caracater es: " + caracter);
         
