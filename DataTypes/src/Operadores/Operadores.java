@@ -32,5 +32,23 @@ public class Operadores {
         System.out.println("div = " + div);
         System.out.println("residuo = " + residuo);
         
+        /* OPERADORES COMBINADOS */
+        
+        int numero = 10;
+        System.out.println("sum: " + (numero += 5));
+        System.out.println("rest: " + (numero -= 5));;
+        System.out.println("div: " + (numero /= 5));
+        System.out.println("multi: " + (numero *= 5));
+        System.out.println("Módulo: " + (numero %= 5));
+        
+        /* INCREMENTOS DECREMENTOS */
+        
+        int numeroMasMenos = 10;
+        
+        System.out.println("más uno: " + (++numeroMasMenos));
+        System.out.println("menos uno: " + (--numeroMasMenos));
+        
+        
+        
     }
 }
