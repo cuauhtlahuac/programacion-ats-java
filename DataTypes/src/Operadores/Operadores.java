@@ -46,9 +46,6 @@ public class Operadores {
         int numeroMasMenos = 10;
         
         System.out.println("más uno: " + (++numeroMasMenos));
-        System.out.println("menos uno: " + (--numeroMasMenos));
-        
-        
-        
+        System.out.println("menos uno: " + (--numeroMasMenos));        
     }
 }
