@@ -17,8 +17,15 @@ public class HackerRank {
     public static void main(String[] args) {
         // We gonna create a instance of a car in order to called
         
-        Car myCar = new Car();
-        myCar.printVariables();
+        Car familyCar = new Car();
+        familyCar.printVariables();
+        
+        //Referenced Type, Shared Copy
+        Car emilyCar = familyCar;
+        emilyCar.wreckCar();
+        emilyCar.printVariables();        
+        
+        
     }
     
 }

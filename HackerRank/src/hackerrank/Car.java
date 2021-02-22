@@ -25,6 +25,10 @@ public class Car {
         System.out.println(condition);
     }
     
+    public void wreckCar(){
+        condition = 'C';
+    }
+    
     
     public static void main(String[] args){
         System.out.println("I gonna print in the HackerRank class, but this print won't be show out.");
