@@ -25,8 +25,9 @@ public class Car {
         System.out.println(condition);
     }
     
-    public void wreckCar(){
-        condition = 'C';
+    public void upgradeSpeed(){
+        minSpeed = maxSpeed;
+        maxSpeed += 1;
     }
     
     

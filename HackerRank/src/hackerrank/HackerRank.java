@@ -22,7 +22,7 @@ public class HackerRank {
         
         //Referenced Type, Shared Copy
         Car emilyCar = familyCar;
-        emilyCar.wreckCar();
+        emilyCar.upgradeSpeed();
         emilyCar.printVariables();        
         
         
