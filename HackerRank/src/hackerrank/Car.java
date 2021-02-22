@@ -16,6 +16,7 @@ public class Car {
     double weight = 4079;
     boolean isTheCarOn = false;
     char condition = 'A';
+    String nameOfCar = "Lucy"; // Double quotes in Referenced Type String
     
     public void printVariables(){ // Public is the scope of the funcion, viod = return nothing
         System.out.println(maxSpeed);
@@ -23,6 +24,7 @@ public class Car {
         System.out.println(weight);
         System.out.println(isTheCarOn);
         System.out.println(condition);
+        System.out.println(nameOfCar);
     }
     
     public void upgradeSpeed(){

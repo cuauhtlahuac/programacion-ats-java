@@ -23,7 +23,17 @@ public class HackerRank {
         //Referenced Type, Shared Copy
         Car emilyCar = familyCar;
         emilyCar.upgradeSpeed();
-        emilyCar.printVariables();        
+        emilyCar.printVariables();
+        
+        // Examples of Referenced Type
+        
+        /*
+            -Arrays
+            - Queues
+            - Linked List
+            - Stacks 
+                        [ Data Structures ]
+        */
         
         
     }
