@@ -31,6 +31,12 @@ public class Car {
     
     int numberOfPeopleInCar = 1;
     
+    public Car(int customMaxSpeed, double customWeight, boolean customIsTheCarOn) { // This is a Constucture
+        maxSpeed  = customMaxSpeed;
+        weight = customWeight;
+        isTheCarOn = customIsTheCarOn;
+    }
+    
     public void printVariables(){ // Public is the scope of the funcion, viod = return nothing
         System.out.println(maxSpeed);
         System.out.println(minSpeed);

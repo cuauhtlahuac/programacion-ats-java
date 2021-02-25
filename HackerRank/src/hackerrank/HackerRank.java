@@ -17,13 +17,8 @@ public class HackerRank {
     public static void main(String[] args) {
         // We gonna create a instance of a car in order to called
         
-        Car familyCar = new Car();
+        Car familyCar = new Car(50, 5000.256, true);
         familyCar.printVariables();
-        
-        //Referenced Type, Shared Copy
-        Car emilyCar = familyCar;
-        emilyCar.upgradeSpeed();
-        emilyCar.printVariables();
         
         // Examples of Referenced Type
         
