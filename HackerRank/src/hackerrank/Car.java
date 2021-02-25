@@ -17,6 +17,19 @@ public class Car {
     boolean isTheCarOn = false;
     char condition = 'A';
     String nameOfCar = "Lucy"; // Double quotes in Referenced Type String
+      
+    /*
+        For create a variable we need:
+        1.- Declare
+        2.- Allocate
+        3.- Initialize
+    */
+    
+    double maxFuel = 16;
+    double currentFuel = 8;
+    double mpg = 26.5; // mileages per gallon
+    
+    int numberOfPeopleInCar = 1;
     
     public void printVariables(){ // Public is the scope of the funcion, viod = return nothing
         System.out.println(maxSpeed);
