@@ -31,19 +31,25 @@ public class Car {
     
     int numberOfPeopleInCar = 1;
     
-    public Car(int customMaxSpeed, double customWeight, boolean customIsTheCarOn) { // This is a Constucture
+    
+    //    Constucture ▼   
+    public Car(int customMaxSpeed, double customWeight, boolean customIsTheCarOn, String customCarName) {
         maxSpeed  = customMaxSpeed;
         weight = customWeight;
         isTheCarOn = customIsTheCarOn;
+        nameOfCar = customCarName;
     }
+    //    Constucture ▲
     
     public void printVariables(){ // Public is the scope of the funcion, viod = return nothing
-        System.out.println(maxSpeed);
-        System.out.println(minSpeed);
-        System.out.println(weight);
-        System.out.println(isTheCarOn);
-        System.out.println(condition);
-        System.out.println(nameOfCar);
+        System.out.println("Max Speed:" + maxSpeed);
+        System.out.println("min Speed: " + minSpeed);
+        System.out.println("Weight: " + weight);
+        System.out.println("Is the car on? : " + isTheCarOn);
+        System.out.println("Car condition: " + condition);
+        System.out.println("Name of the car: " + nameOfCar);
+        System.out.println("Number of people in the car:  " + numberOfPeopleInCar);
+        System.out.println("\n");
     }
     
     public void upgradeSpeed(){
@@ -51,6 +57,9 @@ public class Car {
         maxSpeed += 1;
     }
     
+    public void getIn() {
+        numberOfPeopleInCar++;
+    }
     
     public static void main(String[] args){
         System.out.println("I gonna print in the HackerRank class, but this print won't be show out.");

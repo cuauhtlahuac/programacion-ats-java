@@ -16,9 +16,14 @@ public class HackerRank {
      */
     public static void main(String[] args) {
         // We gonna create a instance of a car in order to called
-        
-        Car familyCar = new Car(50, 5000.256, true);
+        System.out.println("Family Car: \n----------");
+        Car familyCar = new Car(50, 5000.256, true, "Family Car");
+        familyCar.getIn();
         familyCar.printVariables();
+
+        System.out.println("My Car: \n------------");        
+        Car myCar = new Car(65, 2000.98, false, "Rokus Car");
+        myCar.printVariables();
         
         // Examples of Referenced Type
         
