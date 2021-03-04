@@ -61,6 +61,18 @@ public class Car {
         numberOfPeopleInCar++;
     }
     
+    public void getOut() {
+        numberOfPeopleInCar--;
+    }
+    
+    public double howManyMillesTillOutOfgas() {
+        return currentFuel * mpg;
+    }
+    
+    public double maxMilesPerFillUp () {
+        return maxFuel * mpg;
+    }
+    
     public static void main(String[] args){
         System.out.println("I gonna print in the HackerRank class, but this print won't be show out.");
         

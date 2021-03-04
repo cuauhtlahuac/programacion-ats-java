@@ -16,26 +16,21 @@ public class HackerRank {
      */
     public static void main(String[] args) {
         // We gonna create a instance of a car in order to called
-        System.out.println("Family Car: \n----------");
+        System.out.println("Family Car v1: \n----------");
         Car familyCar = new Car(50, 5000.256, true, "Family Car");
         familyCar.getIn();
+        familyCar.getIn();
+        familyCar.getIn();
+        System.out.println("Miles left: " + familyCar.howManyMillesTillOutOfgas());
+        System.out.println("Max Miles: " + familyCar.maxMilesPerFillUp());
         familyCar.printVariables();
-
-        System.out.println("My Car: \n------------");        
-        Car myCar = new Car(65, 2000.98, false, "Rokus Car");
-        myCar.printVariables();
         
-        // Examples of Referenced Type
+        System.out.println("Family Car V2: \n----------");
+        familyCar.printVariables();
+        familyCar.getOut();
         
-        /*
-            -Arrays
-            - Queues
-            - Linked List
-            - Stacks 
-                        [ Data Structures ]
-        */
-        
-        
+        System.out.println("Family Car V3: \n----------");
+        familyCar.printVariables();
     }
     
 }
