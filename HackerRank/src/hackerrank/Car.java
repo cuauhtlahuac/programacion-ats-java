@@ -18,13 +18,6 @@ public class Car {
     char condition = 'A';
     String nameOfCar = "Lucy"; // Double quotes in Referenced Type String
       
-    /*
-        For create a variable we need:
-        1.- Declare
-        2.- Allocate
-        3.- Initialize
-    */
-    
     double maxFuel = 16;
     double currentFuel = 8;
     double mpg = 26.5; // mileages per gallon
@@ -71,6 +64,12 @@ public class Car {
     
     public double maxMilesPerFillUp () {
         return maxFuel * mpg;
+    }
+    
+    public void turnoTheCarOn() {
+        if(!isTheCarOn) {
+            isTheCarOn = true;
+        }
     }
     
     public static void main(String[] args){

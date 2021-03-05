@@ -17,7 +17,7 @@ public class HackerRank {
     public static void main(String[] args) {
         // We gonna create a instance of a car in order to called
         System.out.println("Family Car v1: \n----------");
-        Car familyCar = new Car(50, 5000.256, true, "Family Car");
+        Car familyCar = new Car(50, 5000.256, false, "Family Car");
         familyCar.getIn();
         familyCar.getIn();
         familyCar.getIn();
@@ -30,7 +30,9 @@ public class HackerRank {
         familyCar.getOut();
         
         System.out.println("Family Car V3: \n----------");
+        familyCar.turnoTheCarOn();
         familyCar.printVariables();
+        
     }
     
 }
