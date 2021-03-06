@@ -23,14 +23,16 @@ public class Car {
     double mpg = 26.5; // mileages per gallon
     
     int numberOfPeopleInCar = 1;
+    int maxCarCapacity = 4;
     
     
     //    Constucture ▼   
-    public Car(int customMaxSpeed, double customWeight, boolean customIsTheCarOn, String customCarName) {
+    public Car(int customMaxSpeed, double customWeight, boolean customIsTheCarOn, String customCarName, int customeMaxCarCapacity) {
         maxSpeed  = customMaxSpeed;
         weight = customWeight;
         isTheCarOn = customIsTheCarOn;
         nameOfCar = customCarName;
+        maxCarCapacity = customeMaxCarCapacity;
     }
     //    Constucture ▲
     
@@ -51,11 +53,14 @@ public class Car {
     }
     
     public void getIn() {
+        if(numberOfPeopleInCar < maxCarCapacity)
         numberOfPeopleInCar++;
     }
     
     public void getOut() {
-        numberOfPeopleInCar--;
+        if(numberOfPeopleInCar > 1){
+            numberOfPeopleInCar--;
+        }
     }
     
     public double howManyMillesTillOutOfgas() {
