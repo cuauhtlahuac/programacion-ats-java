@@ -24,8 +24,14 @@ public class Car {
 
     int numberOfPeopleInCar = 1;
     int maxCarCapacity = 4;
-
-    //    Constucture ▼   
+    
+    //    new Constucture: in order to avoid the error and use default values ▼
+    public Car(){
+     
+    }
+    //    new Constucture: in order to avoid the error and use default values ▲
+    
+    //    Constucture ▼
     public Car(int customMaxSpeed, double customWeight, boolean customIsTheCarOn, String customCarName, int customeMaxCarCapacity) {
         maxSpeed = customMaxSpeed;
         weight = customWeight;
@@ -64,6 +70,8 @@ public class Car {
         if (numberOfPeopleInCar > 0) {
             numberOfPeopleInCar--;
             System.out.println("Someone left the car");
+        } else {
+            System.out.println("No one is in the car " + numberOfPeopleInCar);
         }
     }
 
@@ -78,6 +86,8 @@ public class Car {
     public void turnoTheCarOn() {
         if (!isTheCarOn) {
             isTheCarOn = true;
+        } else {
+            System.out.println("The car is already on: " + isTheCarOn);
         }
     }
 

@@ -15,30 +15,17 @@ public class HackerRank {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // We gonna create a instance of a car in order to called
-        System.out.println("Family Car v1: \n----------");
-        Car familyCar = new Car(50, 5000.256, false, "Family Car", 4);
-        familyCar.getIn();
-        familyCar.getIn();
-        familyCar.getIn();
-        familyCar.getIn();
-        familyCar.getIn();
-        familyCar.getIn();
-        familyCar.getIn();
-        familyCar.getIn();
-        System.out.println("Miles left: " + familyCar.howManyMillesTillOutOfgas());
-        System.out.println("Max Miles: " + familyCar.maxMilesPerFillUp());
-        familyCar.printVariables();
-        
-        System.out.println("Family Car V2: \n----------");
-        familyCar.printVariables();
-        familyCar.getOut();
-        familyCar.getOut();
-        familyCar.getOut();
-        
-        System.out.println("Family Car V3: \n----------");
-        familyCar.turnoTheCarOn();
-        familyCar.printVariables();
+        Car tommyCar = new Car();
+        tommyCar.getOut();
+        tommyCar.getOut();
+        tommyCar.getOut();
+        tommyCar.getIn();
+        tommyCar.getIn();
+        tommyCar.getIn();
+        tommyCar.getIn();
+        tommyCar.getIn();
+        tommyCar.turnoTheCarOn();
+        tommyCar.turnoTheCarOn();
         
     }
     
