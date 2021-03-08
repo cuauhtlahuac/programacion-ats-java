@@ -26,3 +26,5 @@ hs_err_pid*
 /DataTypes/dist/
 /HackerRank/nbproject/private/
 /HackerRank/build/
+/CoinToss/nbproject/private/
+/CoinToss/build/
