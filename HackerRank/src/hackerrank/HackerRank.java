@@ -19,6 +19,8 @@ public class HackerRank {
         System.out.println("tmax: " + tommyCar.getMaxSpeed());
         tommyCar.setMaxSpeed(2063);
         System.out.println("tmax: " + tommyCar.getMaxSpeed());
+        tommyCar.upgradeSpeed();
+        System.out.println("tmax: " + tommyCar.getMaxSpeed());        
 
         Car bettysCar = new Car();
         System.out.println("bmax: " + bettysCar.getMaxSpeed());

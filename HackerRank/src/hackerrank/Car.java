@@ -104,8 +104,7 @@ public class Car {
     }
 
     public void upgradeSpeed() {
-        minSpeed = maxSpeed;
-        maxSpeed += 1;
+        setMaxSpeed(getMaxSpeed() + 10);
     }
 
     public void getIn() {
