@@ -24,13 +24,13 @@ public class Car {
 
     int numberOfPeopleInCar = 1;
     int maxCarCapacity = 4;
-    
+
     //    new Constucture: in order to avoid the error and use default values ▼
-    public Car(){
-     
+    public Car() {
+
     }
     //    new Constucture: in order to avoid the error and use default values ▲
-    
+
     //    Constucture ▼
     public Car(int customMaxSpeed, double customWeight, boolean customIsTheCarOn, String customCarName, int customeMaxCarCapacity) {
         maxSpeed = customMaxSpeed;
@@ -40,6 +40,57 @@ public class Car {
         maxCarCapacity = customeMaxCarCapacity;
     }
     //    Constucture ▲
+
+    /*
+        GETTERS AND SETTERS        
+     */
+    public int getMaxSpeed() {
+        return this.maxSpeed; // this refers to the actual object, like tommy car or birthday car
+    }
+
+    public void setMaxSpeed(int newMaxSpeed) {
+        this.maxSpeed = newMaxSpeed;
+    }
+
+    public int getMinSpeed() {
+        return this.minSpeed;
+    }
+
+    public double getWeight() {
+        return this.weight;
+    }
+
+    public boolean getIsTheCarOn() {
+        return this.isTheCarOn;
+    }
+
+    public char getCarCondition() {
+        return this.condition;
+    }
+
+    public String getNameOfCar() {
+        return this.nameOfCar;
+    }
+
+    public double getMaxFuel() {
+        return this.maxFuel;
+    }
+
+    public double getCurrentFuel() {
+        return this.currentFuel;
+    }
+
+    public double getMPG() {
+        return this.mpg;
+    }
+
+    public int getNumberOfPeopleInCar() {
+        return this.numberOfPeopleInCar;
+    }
+
+    public int getmaxCarCapacity() {
+        return this.maxCarCapacity;
+    }
 
     public void printVariables() { // Public is the scope of the funcion, viod = return nothing
         System.out.println("Max Speed:" + maxSpeed);

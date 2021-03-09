@@ -15,18 +15,13 @@ public class HackerRank {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Car tommyCar = new Car();
-        tommyCar.getOut();
-        tommyCar.getOut();
-        tommyCar.getOut();
-        tommyCar.getIn();
-        tommyCar.getIn();
-        tommyCar.getIn();
-        tommyCar.getIn();
-        tommyCar.getIn();
-        tommyCar.turnoTheCarOn();
-        tommyCar.turnoTheCarOn();
-        
+        Car tommyCar = new Car(5000, 3000, true, "Tommy", 2);
+        System.out.println("tmax: " + tommyCar.getMaxSpeed());
+        tommyCar.setMaxSpeed(2063);
+        System.out.println("tmax: " + tommyCar.getMaxSpeed());
+
+        Car bettysCar = new Car();
+        System.out.println("bmax: " + bettysCar.getMaxSpeed());
     }
-    
+
 }
