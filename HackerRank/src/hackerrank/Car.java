@@ -87,6 +87,10 @@ public class Car {
     public int getNumberOfPeopleInCar() {
         return this.numberOfPeopleInCar;
     }
+    
+    public void setNumberOfPeopleInCar(int newNumberOfPeopleInCar) {
+        this.numberOfPeopleInCar = newNumberOfPeopleInCar;
+    }
 
     public int getmaxCarCapacity() {
         return this.maxCarCapacity;
@@ -108,8 +112,8 @@ public class Car {
     }
 
     public void getIn() {
-        if (numberOfPeopleInCar < maxCarCapacity) {
-            numberOfPeopleInCar++;
+        if (getNumberOfPeopleInCar() < getmaxCarCapacity()) {
+            setNumberOfPeopleInCar(getNumberOfPeopleInCar() + 1);
             System.out.println("Someone got in");
         } else {
             System.out.println("The Car is full! " + numberOfPeopleInCar + " = " + maxCarCapacity);
@@ -117,8 +121,8 @@ public class Car {
     }
 
     public void getOut() {
-        if (numberOfPeopleInCar > 0) {
-            numberOfPeopleInCar--;
+        if (getNumberOfPeopleInCar() > 0) {
+            setNumberOfPeopleInCar(getNumberOfPeopleInCar() - 1);
             System.out.println("Someone left the car");
         } else {
             System.out.println("No one is in the car " + numberOfPeopleInCar);
